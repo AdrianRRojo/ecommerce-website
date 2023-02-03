@@ -1,4 +1,4 @@
-export const Products = [
+export const PRODUCTS = [
     {
         id: 1,
         productName: 'Logitech G502 HERO',
