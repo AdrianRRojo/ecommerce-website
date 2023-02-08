@@ -13,7 +13,10 @@ export const Product = (props) => {
           <b>{productName}</b>
         </p>
         <p> ${price}</p>
+        
       </div>
+      {/* Add tail wind hover style / and rounded buttons */}
+      <button>Add to cart</button>
     </div>
   );
 };
