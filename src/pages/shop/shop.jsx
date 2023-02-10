@@ -1,12 +1,12 @@
 import React from "react";
 import { PRODUCTS } from "../../products";
 import { Product } from "./product";
-
+import "./shopPage.css"
 
 export const Shop = () => {
   return (
-    <div className="shop">
-      <div className="bg-blue-300">
+    <div>
+      <div className="">
         <h1>Adri's One Stop Shop</h1>
       </div>
 

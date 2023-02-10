@@ -6,7 +6,7 @@ export default function Navbar(){
     return(
         <div>
             <div>
-                <Link to='/'>Shop</Link>
+                {/* <Link to='/'>Shop</Link> */}
                 <Link to='/cart'>
                     <ShoppingCart size={40}/>
                 </Link>
