@@ -9,8 +9,8 @@ export const Shop = () => {
       <div className="">
         <h1>Adri's One Stop Shop</h1>
       </div>
-
-      <div className="products">
+      <br></br>
+      <div className="grid grid-cols-3 gap-4 content-evenly">
         {PRODUCTS.map((product) => (
           <Product data={product} />
         ))}
