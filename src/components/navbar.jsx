@@ -1,18 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import {ShoppingCart, House} from 'phosphor-react'
+import logo from '../components/Logo.png'
 import './navbar.css';
 export default function Navbar(){
     return(
         <div>
-            <div className="">
+            <div>
                 {/* <Link to='/'>Shop</Link> */}
                 <Link to='/cart' className="absolute right-0">
-                    <ShoppingCart size={40}/>
+                    <ShoppingCart size={35}/>
                 </Link>
-                <Link to='/' className="absolute left-0">
-                    <House size={40} />
+                <Link to='/' className="absolute left-0 w-12">
+                    <img src={logo} />
                 </Link>
+
             </div>
         </div>
     )
