@@ -11,25 +11,6 @@ export default function Navbar(){
         <div>
 
             <div>
-                {/* <Link to='/'>Shop</Link> */}
-                {/* <Link to='/cart' className="absolute right-0 ">
-                    <ShoppingCart size={35}/>
-                </Link>
-                <Link to='/' className="">
-                    <b>GAMING MICE  | </b>
-                </Link>
-                <Link to='/' className="">
-                    <b>ABOUT  | </b>
-                </Link>
-                <Link to='/' className="">
-                    <b>ABOUT</b>
-                </Link>
-                <Link to='/' className="absolute left-0 w-12">
-                    <img src={logo} />
-                </Link>
-                 */}
-
-
             <header className="bg-white shadow-lg h-24 hidden md:flex">
                 <a href="/" className="border flex-shrink-0 flex items-center justify-center px-4 lg:px-6 xl:px-8">
                     <img className="w-20" src={logo} alt="" />
@@ -41,11 +22,6 @@ export default function Navbar(){
                                 <span>SHOP</span>
                             </a>
                         </li>
-                        {/* <li className="p-3 xl:p-6">
-                            <a href="">
-                                <span>Services</span>
-                            </a>
-                        </li> */}
                         <li className="p-3 xl:p-6">
                             <a href="/about">
                                 <span>About</span>
@@ -53,7 +29,7 @@ export default function Navbar(){
                         </li>
                     </ul>
                 </nav>
-                <nav class="hidden xl:contents">
+                <nav className="hidden xl:contents">
                     <ul class="flex items-center mr-4 lg:mr-6 xl:mr-8">
                         <li class="p-1">
                             <a href="https://github.com/AdrianRRojo" target="_blank" className="inline-block rounded-full border p-2 hover:shadow-lg hover:border-opacity-0 duration-200 hover:-translate-y-0.5">

@@ -1,6 +1,6 @@
 
 export default function About(){
     return(
-        <div>About</div>
+        <div className="bg-zinc-900"></div>
     )
 }
