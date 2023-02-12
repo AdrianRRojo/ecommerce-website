@@ -1,9 +1,9 @@
-import LogitechG502 from "./assets/images/LogitechG502.jpg"
-import RazorBasilisk from "./assets/images/RazorBasilisk.jpg"
-import RazerMambaElite from "./assets/images/RazerMamba.jpg"
-import Glorious from "./assets/images/Glorious.jpg"
-import RedThunder from "./assets/images/RedThunderK84.jpg"
-import CorsairNightsword from "./assets/images/CorsairNightsword.jpg"
+import LogitechG502 from "./assets/images/LogitechG502.png"
+import RazorBasilisk from "./assets/images/RazorBasilisk.png"
+import RazerMambaElite from "./assets/images/RazerMambaElite.png"
+import Glorious from "./assets/images/Glorious.png"
+import RedThunder from "./assets/images/RedThunderK84.png"
+import CorsairNightsword from "./assets/images/CorsairNightsword.png"
 
 export const PRODUCTS = [
     {

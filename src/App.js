@@ -10,7 +10,7 @@ import ShopContextProvider from './context/shopContext';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-zinc-500 ">
       <ShopContextProvider>
       <Router>
         <Navbar />
