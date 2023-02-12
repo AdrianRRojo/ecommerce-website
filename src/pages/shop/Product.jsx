@@ -13,9 +13,9 @@ export const Product = (props) => {
       <img src={productImage} />
       <div className="">
         <p>
-          <b>{productName}</b>
+          <b className="text-white">{productName}</b>
         </p>
-        <p> ${price}</p>
+        <p className="text-white"> ${price}</p>
         
       </div>
       {/* Add tail wind hover style / and rounded buttons */}

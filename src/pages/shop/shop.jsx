@@ -8,10 +8,10 @@ import "./shopPage.css"
 export const Shop = () => {
   return (
     <div>
-      <div className="">
-        <h1>Adri's One Stop Shop</h1>
+      <div className="bg-white">
+      <br/>
+      <br/>
       </div>
-      <br></br>
       <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -33,7 +33,7 @@ export const Shop = () => {
         <span class="visually-hidden">Next</span>
       </button>
       </div>
-      <div className="grid grid-cols-3 gap-4 content-evenly">
+      <div className="grid grid-cols-3 gap-4 content-evenly bg-zinc-900">
         {PRODUCTS.map((product) => (
           <Product data={product} />
         ))}
