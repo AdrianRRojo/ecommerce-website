@@ -27,6 +27,11 @@ export default function Navbar(){
                                 <span>About</span>
                             </a>
                         </li>
+                        <li className="p-3 xl:p-6">
+                            <a href="/Login">
+                                <span>Account</span>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
                 <nav className="hidden xl:contents">

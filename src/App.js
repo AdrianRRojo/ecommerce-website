@@ -2,7 +2,7 @@
 import './App.css';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Navbar from './components/navbar';
-import { Contact } from "./pages/contact";
+import { Login } from "./pages/Login";
 import {Shop} from './pages/shop/shop';
 import Cart from './pages/cart/cart';
 import About from './pages/about/about'
@@ -17,7 +17,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/' element={<Shop />} />
-          <Route path='/contact' element={<Contact />} />
+          <Route path='/login' element={<Login />} />
           <Route path='/cart' element={<Cart />} />
           <Route path='/about' element={<About />} />
         </Routes>
