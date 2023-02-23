@@ -5,9 +5,9 @@ import Navbar from './components/navbar';
 import { Login } from "./pages/Login";
 import { Signup } from "./pages/Signup"
 import {Shop} from './pages/shop/shop';
-import Cart from './pages/cart/cart';
+import {Cart} from './pages/cart/cart';
 import About from './pages/about/about'
-import ShopContextProvider from './context/shopContext';
+import { ShopContextProvider } from './context/shopContext';
 
 
 function App() {

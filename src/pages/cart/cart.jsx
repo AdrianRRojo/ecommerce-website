@@ -1,31 +1,37 @@
-import React, {useContext} from "react";
-import { PRODUCTS } from "../../products";
+import React, { useContext } from "react";
 import { ShopContext } from "../../context/shopContext";
+import { PRODUCTS } from "../../products";
 import { CartItem } from "./cartItems";
-
 import { useNavigate } from "react-router-dom";
-export default function Cart(){
-    const { cartItems, updateItemCount, checkout, getTotal } = useContext(ShopContext);
-    const totalAmount = getTotal();
-    const navigate = useNavigate();
-    return(
-        <div>
-            <h1>Your Cart</h1>
-        <div>
-            {PRODUCTS.map((Product) => {
-                if (cartItems[Product.id] !== 0) {
-                    return <CartItem data={Product} />;
-                  }
-                })}
-        </div>
-        {totalAmount > 0 ? (
-        <div className="">
+
+
+export const Cart = () => {
+  const { cartItems, getTotalCartAmount, checkout } = useContext(ShopContext);
+  const totalAmount = getTotalCartAmount();
+
+  const navigate = useNavigate();
+
+  return (
+    <div className="cart">
+      <div>
+        <h1>Your Cart Items</h1>
+      </div>
+      <div className="cart">
+        {PRODUCTS.map((product) => {
+          if (cartItems[product.id] !== 0) {
+            return <CartItem data={product} />;
+          }
+        })}
+      </div>
+
+      {totalAmount > 0 ? (
+        <div className="checkout">
           <p> Subtotal: ${totalAmount} </p>
-          <button onClick={() => navigate("/")}> Continue Shopping? </button>
+          <button onClick={() => navigate("/")}> Continue Shopping </button>
           <button
             onClick={() => {
               checkout();
-              navigate("/contact");
+              navigate("/checkout");
             }}
           >
             {" "}

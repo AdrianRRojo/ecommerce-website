@@ -17,8 +17,8 @@ export default function About(){
             <p>As a recent graduate of General Assembly's Software Engineering Immersive program, I specialize in web development and possess proficiency in various software development forms. I am currently seeking my first position and have designed a "mock" e-commerce site to showcase my skills in this area.</p>
             <br></br>
 
-            <ul class="flex justify-center items-center mr-4 lg:mr-6 xl:mr-8">
-                        <li class="p-1">
+            <ul className="flex justify-center items-center mr-4 lg:mr-6 xl:mr-8">
+                        <li className="p-1">
                             <a href="https://github.com/AdrianRRojo" target="_blank" className="inline-block rounded-full border p-2 hover:shadow-lg hover:border-opacity-0 duration-200 hover:-translate-y-0.5">
                                 <GithubLogo size="24" />
                             </a>
@@ -89,6 +89,8 @@ export default function About(){
             </div>
                 </div>
                     </div>
+
+                    {/* //! Needs to be changed */}
             <div className="col-sm-6">
                 <div className="card">
                     <div className="card-body bg-zinc-800">
