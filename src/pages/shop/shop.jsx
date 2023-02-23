@@ -3,6 +3,7 @@ import { PRODUCTS } from "../../products";
 import { Product } from "./product";
 import banner1 from "../images/bannerOne.png"
 import banner2 from "../images/banner2.png"
+import { ShoppingCart } from "phosphor-react";
 import "./shopPage.css"
 
 export const Shop = () => {
@@ -29,6 +30,17 @@ export const Shop = () => {
         <span class="visually-hidden">Next</span>
       </button>
       </div>
+      <div className="bg-zinc-900">
+      <nav className="hidden xl:contents ">
+          <ul class="flex items-center mr-4 lg:mr-6 xl:mr-8">
+              <li class="p-1">
+                  <a href="/cart" className="inline-block rounded-full border p-2 hover:shadow-lg hover:border-opacity-0 duration-200 hover:-translate-y-0.5">
+                    <ShoppingCart size={32} color="#fff5f5"/>
+                  </a>
+                </li>
+            </ul>
+        </nav>
+        </div>
       <div className="grid grid-cols-3 gap-4 content-evenly bg-zinc-900">
         {PRODUCTS.map((product) => (
           <Product data={product} />

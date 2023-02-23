@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import {LinkedinLogo, GithubLogo, FileArrowDown, Code} from 'phosphor-react'
 import logo from '../components/Logo.png'
+// import resume from '../components/AdrianRojo.pdf'
 import './navbar.css';
 
 export default function Navbar(){
@@ -29,6 +28,11 @@ export default function Navbar(){
                         <li className="p-3 xl:p-6">
                             <a href="/Login">
                                 <span>Account</span>
+                            </a>
+                        </li>
+                        <li className="p-3 xl:p-6">
+                            <a href="/cart">
+                                <span>Cart</span>
                             </a>
                         </li>
                     </ul>
