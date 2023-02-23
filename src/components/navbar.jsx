@@ -32,6 +32,11 @@ export default function Navbar(){
                                 <span>Account</span>
                             </a>
                         </li>
+                        <li className="p-3 xl:p-6">
+                            <a href="/cart">
+                                <span>Cart</span>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
                 <nav className="hidden xl:contents">
