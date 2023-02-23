@@ -13,7 +13,7 @@ export const Login = () => {
           <p className="mt-2 text-center text-sm text-zinc-900">
             Don't have an account? {' '}
             
-            <a href="#" className="font-medium text-blue-600 hover:text-blue-500">
+            <a href="/signup" className="font-medium text-blue-600 hover:text-blue-500">
               Sign up here
             </a>
           </p>
